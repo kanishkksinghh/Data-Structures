@@ -2,8 +2,8 @@ import array as a
 
 val = a.array('i', [1, 2, 3, 4, 5, 6, 7, 8, 9])
 
-for i in range(0,len(val)):
-    print(val[i] , end=" ")
+# for i in range(0,len(val)):
+#     print(val[i] , end=" ")
     
 # print('\n')
 # for x in val:
@@ -24,7 +24,15 @@ for i in range(0,len(val)):
 # val.append(100)
 # val[2] = 100
 
-copyArray = a.array(val.typecode, (x for x in val))
+
+# Slcing
+
+abc = val[2:5]
+
+
+# copyArray = a.array(val.typecode, (x for x in val))
+
+# copyArray.pop(3)
 
 for i in range(0,len(val)):
-    print(copyArray[i] , end=" ")
+    print(val[i] , end=" ")
